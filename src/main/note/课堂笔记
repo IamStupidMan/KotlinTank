@@ -1,0 +1,14 @@
+游戏的基本功能：
+1、游戏坐标
+   左上角为（0,0）点，原点右侧属于X轴的正方向，原点下方属于Y轴的正方向
+2、游戏的显示
+        //绘制图片
+        Painter.drawImage("img/tank_u.gif",200,200)
+        //绘制颜色
+        Painter.drawColor(Color.CHOCOLATE,20,20,100,100)
+        //绘制文本
+        Painter.drawText("hello Kotlin",30,30,Color.WHITE)
+3、游戏的操作
+        在onKeyPressed中接受用户的操作，从而给出不同的响应
+4、游戏的声音
+        Composer.play("snd/blast.wav")

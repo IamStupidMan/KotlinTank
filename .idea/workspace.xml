@@ -1,10 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f5d7c5ab-ba83-4731-a4d5-90c4fa4c7fcf" name="Default Changelist" comment="" />
+    <list default="true" id="f5d7c5ab-ba83-4731-a4d5-90c4fa4c7fcf" name="Default Changelist" comment="初始化代码结构">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/summerdear/tankgame/Config.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/summerdear/tankgame/GameWindow.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/summerdear/tankgame/enums/Direction.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/summerdear/tankgame/model/Grass.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/summerdear/tankgame/model/Steel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/summerdear/tankgame/model/Tank.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/summerdear/tankgame/model/View.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/summerdear/tankgame/model/Wall.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/summerdear/tankgame/model/Water.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/note/课堂笔记" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/blast_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/blast_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/blast_11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/blast_12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/blast_13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/blast_14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/blast_15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/blast_16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/blast_17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/blast_18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/blast_19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/blast_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/blast_20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/blast_21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/blast_22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/blast_23.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/blast_24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/blast_25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/blast_26.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/blast_27.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/blast_28.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/blast_29.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/blast_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/blast_30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/blast_31.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/blast_32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/blast_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/blast_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/blast_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/blast_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/blast_8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/blast_9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/bomb.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/born_1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/born_2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/born_3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/born_4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/bullet_d.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/bullet_l.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/bullet_r.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/bullet_u.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/camp.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/enemy_1_d.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/enemy_1_l.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/enemy_1_r.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/enemy_1_u.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/enemy_2_d.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/enemy_2_l.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/enemy_2_r.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/enemy_2_u.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/enemy_3_d.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/enemy_3_l.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/enemy_3_r.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/enemy_3_u.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/enemy_4_d.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/enemy_4_l.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/enemy_4_r.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/enemy_4_u.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/enemy_5_d.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/enemy_5_l.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/enemy_5_r.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/enemy_5_u.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/enemy_6_d.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/enemy_6_l.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/enemy_6_r.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/enemy_6_u.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/gameover.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/grass.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/select.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/select_tank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/shot_bottom.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/shot_left.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/shot_right.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/shot_top.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/star.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/steel.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/steel_small.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/tank_2_d.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/tank_2_l.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/tank_2_r.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/tank_2_u.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/tank_d.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/tank_l.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/tank_r.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/tank_small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/tank_u.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/timer.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/wall.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/wall_small.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/water.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/map/1.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/snd/add.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/snd/bg.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/snd/blast.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/snd/fire.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/snd/hit.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/snd/start.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/snd/test.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
+    <ignored path=".idea/vcs.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +130,80 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tank" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tank" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tank" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tank" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tank" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.2.51" type="cfea851d:ExternalSystemViewDefaultContributor$LibraryDependencyDataExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tank" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="com.github.shaunxiao:kotlinGameEngine:v0.0.4" type="cfea851d:ExternalSystemViewDefaultContributor$LibraryDependencyDataExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tank" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="com.github.shaunxiao:kotlinGameEngine:v0.0.4" type="cfea851d:ExternalSystemViewDefaultContributor$LibraryDependencyDataExternalSystemNode" />
+                <item name="org.jetbrains.kotlin:kotlin-stdlib-jre8:1.1.4" type="cfea851d:ExternalSystemViewDefaultContributor$LibraryDependencyDataExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tank" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tank" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1983244582">
@@ -50,53 +239,202 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1017454700">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="gradle" value="1" />
+          <entry key="txt" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Groovy" value="1" />
+          <entry key="PLAIN_TEXT" value="7" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="1496747736">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="gradle" value="30" />
+          <entry key="kt" value="1771" />
+          <entry key="课堂笔记" value="135" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Groovy" value="30" />
+          <entry key="Kotlin" value="1771" />
+          <entry key="PLAIN_TEXT" value="135" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="6" />
+          <entry key="gif" value="8" />
+          <entry key="java" value="2" />
+          <entry key="jpg" value="1" />
+          <entry key="kt" value="16" />
+          <entry key="map" value="1" />
+          <entry key="课堂笔记" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="6" />
+          <entry key="Image" value="9" />
+          <entry key="JAVA" value="2" />
+          <entry key="Kotlin" value="16" />
+          <entry key="PLAIN_TEXT" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/summerdear/tankgame/GameWindow.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+              <folding>
+                <element signature="e#33#288#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.shaunxiao/kotlinGameEngine/v0.0.4/f70879d58e700a59fa2d69fbe56aeaba0eaaab22/kotlinGameEngine-v0.0.4.jar!/org/itheima/kotlin/game/core/Window.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="13" lean-forward="true" selection-start-line="9" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="15" column="53" lean-forward="true" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gradlew">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2280">
-              <caret line="4" column="35" lean-forward="true" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gradlew.bat">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-936" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/settings.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.shaunxiao/kotlinGameEngine/v0.0.4/f70879d58e700a59fa2d69fbe56aeaba0eaaab22/kotlinGameEngine-v0.0.4.jar!/org/itheima/kotlin/game/core/Painter.class">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+              <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.shaunxiao/kotlinGameEngine/v0.0.4/f70879d58e700a59fa2d69fbe56aeaba0eaaab22/kotlinGameEngine-v0.0.4.jar!/org/itheima/kotlin/game/core/MyCanvas.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="8" column="59" lean-forward="true" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/summerdear/tankgame/model/Tank.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="13" column="50" lean-forward="true" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
+              <folding>
+                <element signature="e#39#120#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/summerdear/tankgame/enums/Direction.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/summerdear/tankgame/Config.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.51/649a609725b857dd285cf69d49d4f1f77335076e/kotlin-stdlib-1.2.51-sources.jar!/kotlin/io/FileReadWrite.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="192" column="16" selection-start-line="192" selection-start-column="16" selection-end-line="192" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/map/1.map">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/summerdear/tankgame/model/Grass.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+              <folding>
+                <element signature="e#39#120#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+        <option value="Kotlin Object" />
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin Enum" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>allprojects</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="IamStupidMan &lt;15210126609@163.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -290,8 +628,10 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6137545265768" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="2769451269" />
+        <entry key="$PROJECT_DIR$" value="6137561088131" />
+        <entry key="$PROJECT_DIR$/.gradle" value="0" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="3874253821" />
+        <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2007532874" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="2099737240" />
       </map>
     </option>
@@ -450,6 +790,17 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/MyWindow.kt" />
+        <option value="$PROJECT_DIR$/src/main/note/课堂笔记" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/summerdear/tankgame/Config.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/summerdear/tankgame/model/View.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/summerdear/tankgame/model/Wall.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/summerdear/tankgame/model/Grass.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/summerdear/tankgame/model/Steel.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/summerdear/tankgame/model/Water.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/summerdear/tankgame/enums/Direction.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/summerdear/tankgame/GameWindow.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/summerdear/tankgame/model/Tank.kt" />
       </list>
     </option>
   </component>
@@ -465,49 +816,253 @@
     <option name="width" value="1936" />
     <option name="height" value="1066" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <flattenPackages ProjectPane="false" />
+      <autoscrollFromSource ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="tank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tank" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="KotlinTank" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="tank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tank" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="KotlinTank" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KotlinTank" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tank" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="KotlinTank" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="tank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KotlinTank" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KotlinTank" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KotlinTank" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="summerdear" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KotlinTank" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="summerdear" type="462c0819:PsiDirectoryNode" />
+              <item name="tankgame" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KotlinTank" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="summerdear" type="462c0819:PsiDirectoryNode" />
+              <item name="tankgame" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KotlinTank" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="summerdear" type="462c0819:PsiDirectoryNode" />
+              <item name="tankgame" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KotlinTank" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KotlinTank" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KotlinTank" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="map" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tank" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="tank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="tank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: com.github.shaunxiao:kotlinGameEngine:v0.0.4" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="tank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: com.github.shaunxiao:kotlinGameEngine:v0.0.4" type="70bed36:NamedLibraryElementNode" />
+              <item name="kotlinGameEngine-v0.0.4.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: com.github.shaunxiao:kotlinGameEngine:v0.0.4" type="70bed36:NamedLibraryElementNode" />
+              <item name="kotlinGameEngine-v0.0.4.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: com.github.shaunxiao:kotlinGameEngine:v0.0.4" type="70bed36:NamedLibraryElementNode" />
+              <item name="kotlinGameEngine-v0.0.4.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="itheima" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: com.github.shaunxiao:kotlinGameEngine:v0.0.4" type="70bed36:NamedLibraryElementNode" />
+              <item name="kotlinGameEngine-v0.0.4.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="itheima" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: com.github.shaunxiao:kotlinGameEngine:v0.0.4" type="70bed36:NamedLibraryElementNode" />
+              <item name="kotlinGameEngine-v0.0.4.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="itheima" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: com.github.shaunxiao:kotlinGameEngine:v0.0.4" type="70bed36:NamedLibraryElementNode" />
+              <item name="kotlinGameEngine-v0.0.4.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="itheima" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.2.51" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="tank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.2.51" type="70bed36:NamedLibraryElementNode" />
+              <item name="kotlin-stdlib-1.2.51.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.2.51" type="70bed36:NamedLibraryElementNode" />
+              <item name="kotlin-stdlib-1.2.51.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.2.51" type="70bed36:NamedLibraryElementNode" />
+              <item name="kotlin-stdlib-1.2.51.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534414186389" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.summerdear.tankgame.model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\IntelliJIDEAProjects\KotlinTank\src\main\resources" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -521,6 +1076,44 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Kotlin.com.summerdear.tankgame.GameWindowKt">
+    <configuration name="MyWindowKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="tank_main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="MyWindowKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.summerdear.tankgame.GameWindowKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="tank_main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.summerdear.tankgame.GameWindowKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Kotlin.MyWindowKt" />
+      <item itemvalue="Kotlin.com.summerdear.tankgame.GameWindowKt" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.com.summerdear.tankgame.GameWindowKt" />
+        <item itemvalue="Kotlin.MyWindowKt" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -532,46 +1125,89 @@
       <option name="presentableId" value="Default" />
       <updated>1534386130728</updated>
       <workItem from="1534386132651" duration="1410000" />
+      <workItem from="1534390598001" duration="552000" />
+      <workItem from="1534391231274" duration="12332000" />
     </task>
+    <task id="LOCAL-00001" summary="初始化代码结构">
+      <created>1534390859176</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1534390859176</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1410000" />
+    <option name="totallyTimeSpent" value="14294000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" id="Project" order="0" visible="true" weight="0.2553305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Build" weight="0.3290461" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.32939914" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32939914" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39914164" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Gradle" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="11" weight="0.3290461" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Gradle" order="5" weight="0.32995737" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="9" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" id="Project" order="0" visible="true" weight="0.2553305" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.32939914" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.32939914" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.39914164" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="12" weight="0.3290461" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Gradle" order="5" weight="0.32995737" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="9" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -579,37 +1215,202 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="初始化代码结构" />
+    <option name="LAST_COMMIT_MESSAGE" value="初始化代码结构" />
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/gradlew">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew.bat">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
+          <caret column="25" selection-start-column="25" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradlew.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-936" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradlew">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2280">
-          <caret line="4" column="35" lean-forward="true" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="53" lean-forward="true" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+        <state relative-caret-position="432">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Java/jdk1.8.0_141/javafx-src.zip!/javafx/application/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="144" column="22" selection-start-line="144" selection-start-column="22" selection-end-line="144" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/note/课堂笔记">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/img/logo.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/img/grass.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/img/steel.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/img/water.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/MyWindow.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/summerdear/tankgame/model/Steel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/summerdear/tankgame/model/Water.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/summerdear/tankgame/model/Wall.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="59" lean-forward="true" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
+          <folding>
+            <element signature="e#39#120#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/summerdear/tankgame/model/View.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Java/jdk1.8.0_141/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="510" column="18" selection-start-line="510" selection-start-column="18" selection-end-line="510" selection-end-column="18" />
+          <folding>
+            <element signature="e#21135#21136#0" expanded="true" />
+            <element signature="e#21162#21163#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.51/649a609725b857dd285cf69d49d4f1f77335076e/kotlin-stdlib-1.2.51-sources.jar!/kotlin/io/FileReadWrite.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="192" column="16" selection-start-line="192" selection-start-column="16" selection-end-line="192" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/map/1.map">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/summerdear/tankgame/model/Tank.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="50" lean-forward="true" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
+          <folding>
+            <element signature="e#39#120#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/summerdear/tankgame/Config.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/img/tank_d.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/img/tank_l.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/img/tank_u.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/summerdear/tankgame/enums/Direction.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/summerdear/tankgame/model/Grass.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+          <folding>
+            <element signature="e#39#120#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/summerdear/tankgame/GameWindow.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding>
+            <element signature="e#33#288#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.shaunxiao/kotlinGameEngine/v0.0.4/f70879d58e700a59fa2d69fbe56aeaba0eaaab22/kotlinGameEngine-v0.0.4.jar!/org/itheima/kotlin/game/core/MyCanvas.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="59" lean-forward="true" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.shaunxiao/kotlinGameEngine/v0.0.4/f70879d58e700a59fa2d69fbe56aeaba0eaaab22/kotlinGameEngine-v0.0.4.jar!/org/itheima/kotlin/game/core/Window.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" lean-forward="true" selection-start-line="9" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.shaunxiao/kotlinGameEngine/v0.0.4/f70879d58e700a59fa2d69fbe56aeaba0eaaab22/kotlinGameEngine-v0.0.4.jar!/org/itheima/kotlin/game/core/Painter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
         </state>
       </provider>
     </entry>
