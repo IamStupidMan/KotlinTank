@@ -7,7 +7,7 @@ import org.itheima.kotlin.game.core.Painter
 /**
  * 草坪
  */
-class Grass(override var x: Int, override var y: Int) :View {
+class Grass(override var x: Int, override var y: Int) : View {
     /**
      * 位置
      */
@@ -23,6 +23,6 @@ class Grass(override var x: Int, override var y: Int) :View {
      * 显示
      */
     override fun draw() {
-        Painter.drawImage("img/grass.gif",x,y)
+        Painter.drawImage("img/grass.gif", x, y)
     }
 }

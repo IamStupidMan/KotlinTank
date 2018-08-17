@@ -3,6 +3,9 @@ package com.summerdear.tankgame.model
 
 interface View {
 
+    /**
+     * 坐标位置
+     */
     var x: Int
     var y: Int
     /**

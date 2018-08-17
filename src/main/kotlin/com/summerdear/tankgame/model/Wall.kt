@@ -1,13 +1,14 @@
 package com.summerdear.tankgame.model
 
 import com.summerdear.tankgame.Config
+import com.summerdear.tankgame.business.Blockable
 import org.itheima.kotlin.game.core.Painter
 
 
 /**
  * 砖墙
  */
-class Wall(override var x: Int, override var y: Int):View {
+class Wall(override var x: Int, override var y: Int) : Blockable{
     /**
      * 位置
      */
@@ -23,7 +24,7 @@ class Wall(override var x: Int, override var y: Int):View {
      * 显示
      */
     override fun draw() {
-        Painter.drawImage("img/wall.gif",x,y)
+        Painter.drawImage("img/wall.gif", x, y)
     }
 
 }
