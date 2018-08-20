@@ -1,7 +1,6 @@
 package com.summerdear.tankgame
 
-import com.summerdear.tankgame.business.Blockable
-import com.summerdear.tankgame.business.Movable
+import com.summerdear.tankgame.business.*
 import com.summerdear.tankgame.enums.Direction
 import com.summerdear.tankgame.model.*
 import javafx.application.Application
@@ -9,11 +8,12 @@ import javafx.scene.input.KeyCode
 import javafx.scene.input.KeyEvent
 import org.itheima.kotlin.game.core.Window
 import java.io.File
+import java.util.concurrent.CopyOnWriteArrayList
 
 class GameWindow : Window(title = "坦克大战", icon = "img/logo.jpg", width = Config.gameWidth, height = Config.gameHeight) {
 
-    //地图中所有元素的集合
-    private var views = arrayListOf<View>()
+    //地图中所有元素的集合,线程安全的集合
+    private var views = CopyOnWriteArrayList<View>()
 
     //我方坦克,晚点创建
     private lateinit var tank: Tank
@@ -40,6 +40,7 @@ class GameWindow : Window(title = "坦克大战", icon = "img/logo.jpg", width =
             lineNum++
         }
 
+        //先固定坦克的初始位置
         tank = Tank(Config.block * 10, Config.block * 12)
         views.add(tank)
 
@@ -104,6 +105,44 @@ class GameWindow : Window(title = "坦克大战", icon = "img/logo.jpg", width =
 
             //找到了move碰撞的block物体
             move.notifyCollision(collisionDirection, collisionBlock)
+        }
+
+
+        //检测有飞行能力的view，让他们自己动起来
+        views.filter { it is Flyable }.forEach {
+            it as Flyable
+            it.fly()
+        }
+
+        //检测可销毁的view，移除
+        views.filter { it is Destoryable }.forEach {
+            if ((it as Destoryable).isDestroyed()) {
+                views.remove(it)
+            }
+        }
+
+        //检测具备攻击能力的view和被攻击的物体是否产生碰撞
+        views.filter { it is Attackable }.forEach attackTag@{ attack ->
+            views.filter { it is Sufferable }.forEach sufferTag@{ suffer ->
+                attack as Attackable
+                suffer as Sufferable
+                //判断是否发生碰撞
+                if (attack.isCollision(suffer)) {
+
+                    //通知攻击者
+                    attack.notifyAttack(suffer)
+
+                    //通知被攻击者
+                    val view = suffer.notifySuffer(attack)
+                    view?.let {
+                        //显示爆炸的效果
+                        views.addAll(view)
+                    }
+
+                    return@sufferTag
+                }
+            }
+
         }
 
     }

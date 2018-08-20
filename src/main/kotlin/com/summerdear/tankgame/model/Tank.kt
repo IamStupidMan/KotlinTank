@@ -21,14 +21,14 @@ class Tank(override var x: Int, override var y: Int) : Movable {
     override var speed: Int = 8
 
     //坦克的碰撞方向，默认为null
-    var collisionDirection: Direction? = null
+    private var collisionDirection: Direction? = null
 
     /**
      * 我方坦克的绘制
      */
     override fun draw() {
         //根据坦克的方向进行绘制
-        var resources = when (currentDirection) {
+        val resources = when (currentDirection) {
             Direction.UP -> "img/tank_u.gif"
             Direction.DOWN -> "img/tank_d.gif"
             Direction.LEFT -> "img/tank_l.gif"
@@ -110,17 +110,38 @@ class Tank(override var x: Int, override var y: Int) : Movable {
         collisionDirection = direction
     }
 
+    /**
+     * 发射子弹的方法
+     */
     fun shot(): Bullet {
 
-        //计算子弹发射精确的xy
-        when(currentDirection){
-//            Direction.UP->
-//                Direction.DOWN->
-//            Direction.LEFT->
-//            Direction.RIGHT->
+        return Bullet(currentDirection) { bulletWidth, bulletHeight ->
+            var bulletX = 0
+            var bulletY = 0
 
+            when (currentDirection) {
+                Direction.UP -> {
+                    bulletX = x + (width - bulletWidth) / 2
+                    bulletY = y - bulletHeight / 2
+                }
+                Direction.DOWN -> {
+                    bulletX = x + (width - bulletWidth) / 2
+                    bulletY = y + width - bulletHeight / 2
+                }
+                Direction.LEFT -> {
+                    bulletX = x - bulletWidth / 2
+                    bulletY = y + (height - bulletHeight) / 2
+                }
+                Direction.RIGHT -> {
+                    bulletX = x + width - bulletWidth / 2
+                    bulletY = y + (height - bulletHeight) / 2
+                }
+            }
+
+            Pair(bulletX, bulletY)
         }
-        return Bullet(currentDirection, x, y)
+
+
     }
 
 
