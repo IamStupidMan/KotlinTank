@@ -6,6 +6,9 @@ import com.summerdear.tankgame.model.View
  * 具备攻击的能力
  */
 interface Attackable : View {
+
+
+    open var owner:View
     /**
      * 攻击力
      */

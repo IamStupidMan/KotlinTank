@@ -19,6 +19,11 @@ class GameWindow : Window(title = "坦克大战", icon = "img/logo.jpg", width =
     private lateinit var tank: Tank
 
     /**
+     * 游戏是否结束
+     */
+    var gameOver: Boolean = false
+
+    /**
      * 窗体创建的回调
      */
     override fun onCreate() {
@@ -34,6 +39,7 @@ class GameWindow : Window(title = "坦克大战", icon = "img/logo.jpg", width =
                     '水' -> views.add(Water(columnNum * Config.block, lineNum * Config.block))
                     '铁' -> views.add(Steel(columnNum * Config.block, lineNum * Config.block))
                     '草' -> views.add(Grass(columnNum * Config.block, lineNum * Config.block))
+                    '敌' -> views.add(EnemyTank(columnNum * Config.block, lineNum * Config.block))
                 }
                 columnNum++
             }
@@ -43,6 +49,10 @@ class GameWindow : Window(title = "坦克大战", icon = "img/logo.jpg", width =
         //先固定坦克的初始位置
         tank = Tank(Config.block * 10, Config.block * 12)
         views.add(tank)
+
+        //大本营
+        var camp = Camp(Config.gameWidth / 2 - Config.block, Config.gameHeight - 96)
+        views.add(camp)
 
 
     }
@@ -61,6 +71,10 @@ class GameWindow : Window(title = "坦克大战", icon = "img/logo.jpg", width =
      * 接收用户按键操作
      */
     override fun onKeyPressed(event: KeyEvent) {
+
+        //游戏结束了，剩下的逻辑就不走了
+        if (gameOver) return
+
         when (event.code) {
             KeyCode.W -> tank.move(Direction.UP)
             KeyCode.S -> tank.move(Direction.DOWN)
@@ -74,7 +88,22 @@ class GameWindow : Window(title = "坦克大战", icon = "img/logo.jpg", width =
      * 业务逻辑，耗时的操作，窗体刷新的回调
      */
     override fun onRefresh() {
-        //业务逻辑
+
+        //检测可销毁的view，移除
+        views.filter { it is Destoryable }.forEach {
+            if ((it as Destoryable).isDestroyed()) {
+                views.remove(it)
+
+                val arrayOfViews = it.showDestroy()
+                arrayOfViews?.let {
+                    views.addAll(arrayOfViews)
+                }
+            }
+        }
+
+
+        //游戏结束了，剩下的逻辑就不走了
+        if (gameOver) return
 
 
         //判断运动的物体和阻塞的物体是否发生碰撞
@@ -86,7 +115,7 @@ class GameWindow : Window(title = "坦克大战", icon = "img/logo.jpg", width =
             var collisionDirection: Direction? = null
             var collisionBlock: Blockable? = null
             //2.找到阻塞的物体,blockTAG@表示为此循环加一个Tag
-            views.filter { it is Blockable }.forEach blockTag@{ block ->
+            views.filter { (it is Blockable) and (move != it) }.forEach blockTag@{ block ->
                 //3.遍历集合，找到是否发生碰撞
                 //强转
                 block as Blockable
@@ -114,24 +143,15 @@ class GameWindow : Window(title = "坦克大战", icon = "img/logo.jpg", width =
             it.fly()
         }
 
-        //检测可销毁的view，移除
-        views.filter { it is Destoryable }.forEach {
-            if ((it as Destoryable).isDestroyed()) {
-                views.remove(it)
-            }
-        }
-
         //检测具备攻击能力的view和被攻击的物体是否产生碰撞
         views.filter { it is Attackable }.forEach attackTag@{ attack ->
-            views.filter { it is Sufferable }.forEach sufferTag@{ suffer ->
-                attack as Attackable
+            attack as Attackable
+            views.filter { (it is Sufferable) and (attack.owner != it) and (attack != it) }.forEach sufferTag@{ suffer ->
                 suffer as Sufferable
                 //判断是否发生碰撞
                 if (attack.isCollision(suffer)) {
-
                     //通知攻击者
                     attack.notifyAttack(suffer)
-
                     //通知被攻击者
                     val view = suffer.notifySuffer(attack)
                     view?.let {
@@ -143,6 +163,27 @@ class GameWindow : Window(title = "坦克大战", icon = "img/logo.jpg", width =
                 }
             }
 
+        }
+
+
+        //检测自动射击的view
+        views.filter { it is AutoShot }.forEach {
+            it as AutoShot
+            val autoShot = it.autoShot()
+            autoShot?.let {
+                views.add(autoShot)
+            }
+        }
+
+        //检测游戏是否结束,大本营被摧毁了
+        if (views.filter { it is Camp }.isEmpty()) {
+            gameOver = true
+        }
+
+
+        //检测游戏是否结束,敌方坦克都没销毁了
+        if (views.filter { it is EnemyTank }.isEmpty()) {
+            gameOver = true
         }
 
     }

@@ -1,15 +1,14 @@
 package com.summerdear.tankgame.model
 
 import com.summerdear.tankgame.Config
-import com.summerdear.tankgame.business.Blockable
-import com.summerdear.tankgame.business.Movable
+import com.summerdear.tankgame.business.*
 import com.summerdear.tankgame.enums.Direction
 import org.itheima.kotlin.game.core.Painter
 
 /**
  * 我方的坦克
  */
-class Tank(override var x: Int, override var y: Int) : Movable {
+class Tank(override var x: Int, override var y: Int) : Movable, Blockable, Sufferable,Destoryable {
 
     override var width: Int = Config.block
     override var height: Int = Config.block
@@ -22,6 +21,26 @@ class Tank(override var x: Int, override var y: Int) : Movable {
 
     //坦克的碰撞方向，默认为null
     private var collisionDirection: Direction? = null
+
+    /**
+     * 我方坦克的血量
+     */
+    override var blood: Int = 100
+
+    /**
+     * 遭受攻击
+     */
+    override fun notifySuffer(attack: Attackable): Array<View>? {
+        blood -= attack.attackPower
+        return arrayOf(Blast(x, y))
+    }
+
+    /**
+     * 我方坦克被销毁
+     */
+    override fun isDestroyed(): Boolean {
+        return false
+    }
 
     /**
      * 我方坦克的绘制
@@ -48,13 +67,11 @@ class Tank(override var x: Int, override var y: Int) : Movable {
             return
         }
 
-
         //如果要移动的方向和当前的方向不一致，先把坦克的方向改变，而不去执行移动操作
         if (direction != currentDirection) {
             currentDirection = direction
             return
         }
-
 
         //改变坦克的的坐标，从而使坦克移动起来
         when (currentDirection) {
@@ -69,36 +86,6 @@ class Tank(override var x: Int, override var y: Int) : Movable {
         if (x > Config.gameWidth - width) x = Config.gameWidth - width
         if (y < 0) y = 0
         if (y > Config.gameHeight - height) y = Config.gameHeight - height
-
-    }
-
-    /**
-     * 检测碰撞
-     */
-    override fun willCollision(block: Blockable): Direction? {
-
-        //
-        var x: Int = this.x
-        var y: Int = this.y
-
-        when (currentDirection) {
-            Direction.UP -> y -= speed
-            Direction.DOWN -> y += speed
-            Direction.LEFT -> x -= speed
-            Direction.RIGHT -> x += speed
-        }
-
-        val collision = when {
-            block.y + block.height <= y -> //障碍物在运动物体上方，没发生碰撞
-                false
-            y + height <= block.y -> //障碍物在运动物体下方，没发生碰撞
-                false
-            block.x + block.width <= x -> //障碍物在运动物体左方，没发生碰撞
-                false
-            else -> x + width > block.x
-        }
-
-        return if (collision) currentDirection else null
     }
 
 
@@ -106,7 +93,6 @@ class Tank(override var x: Int, override var y: Int) : Movable {
      * 接收到了碰撞信息
      */
     override fun notifyCollision(direction: Direction?, block: Blockable?) {
-
         collisionDirection = direction
     }
 
@@ -115,7 +101,7 @@ class Tank(override var x: Int, override var y: Int) : Movable {
      */
     fun shot(): Bullet {
 
-        return Bullet(currentDirection) { bulletWidth, bulletHeight ->
+        return Bullet(currentDirection, this) { bulletWidth, bulletHeight ->
             var bulletX = 0
             var bulletY = 0
 

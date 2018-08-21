@@ -13,7 +13,16 @@ import org.itheima.kotlin.game.core.Painter
  * 此处Bullet的构造函数，接收一个两个参数，一个是Direction类型的，名字叫direction
  * 另一个是一个函数，名字叫create，这个函数返回一个Pair对象，里面包含两个Int类型的整数
  */
-class Bullet(override val currentDirection: Direction, create: (width: Int, height: Int) -> Pair<Int, Int>) : Flyable, Destoryable, Attackable {
+class Bullet(override val currentDirection: Direction, override var owner: View, create: (width: Int, height: Int) -> Pair<Int, Int>) : Flyable, Destoryable, Attackable, Sufferable {
+    override val blood: Int = 1
+
+    /**
+     * 子弹对消
+     */
+    override fun notifySuffer(attack: Attackable): Array<View>? {
+        return arrayOf(Blast(x, y))
+    }
+
     /**
      * 子弹的攻击力
      */

@@ -1,14 +1,22 @@
 package com.summerdear.tankgame.model
 
 import com.summerdear.tankgame.Config
+import com.summerdear.tankgame.business.Attackable
 import com.summerdear.tankgame.business.Blockable
+import com.summerdear.tankgame.business.Sufferable
 import org.itheima.kotlin.game.core.Painter
+import java.math.BigInteger
 
 
 /**
  * 钢板
  */
-class Steel(override var x: Int, override var y: Int) : Blockable {
+class Steel(override var x: Int, override var y: Int) : Blockable, Sufferable {
+    override val blood: Int = Integer.MAX_VALUE
+
+    override fun notifySuffer(attack: Attackable): Array<View>? {
+        return null
+    }
     /**
      * 位置
      */
